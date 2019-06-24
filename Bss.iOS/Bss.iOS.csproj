@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7414704-3F67-4497-A36B-3A0951AB3DCF}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Bss.iOS</RootNamespace>
+    <AssemblyName>Bss.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>38369</IOSDebuggerPort>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <MtouchVerbosity></MtouchVerbosity>
+    <MtouchLink></MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchVerbosity></MtouchVerbosity>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AVFoundation\PlayerLooper.cs" />
+    <Compile Include="CoreAnimation\PulseEffect.cs" />
+    <Compile Include="CoreGraphics\AffineTransformHelper.cs" />
+    <Compile Include="CoreGraphics\BMath.cs" />
+    <Compile Include="CoreLocation\MapDelegate.cs" />
+    <Compile Include="Extensions\AnnotationExtensions.cs" />
+    <Compile Include="Extensions\ArrayExtensions.cs" />
+    <Compile Include="Extensions\AttributedStringExtension.cs" />
+    <Compile Include="Extensions\CAGradientLayerExtension.cs" />
+    <Compile Include="Extensions\CGAffineTransformExtension.cs" />
+    <Compile Include="Extensions\CGPointExtension.cs" />
+    <Compile Include="Extensions\CGRectExtension.cs" />
+    <Compile Include="Extensions\CGSizeExtension.cs" />
+    <Compile Include="Extensions\CLLocationCoordinate2DExtension.cs" />
+    <Compile Include="Extensions\DateExtension.cs" />
+    <Compile Include="Extensions\DictionaryExtension.cs" />
+    <Compile Include="Extensions\MKMapViewExtension.cs" />
+    <Compile Include="Extensions\NSLayoutConstraintExtension.cs" />
+    <Compile Include="Extensions\NSLayoutManagerExtensions.cs" />
+    <Compile Include="Extensions\NSObjectExtensions.cs" />
+    <Compile Include="Extensions\NSRangeExtension.cs" />
+    <Compile Include="Extensions\NumberExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Extensions\TypeExtension.cs" />
+    <Compile Include="Extensions\UIBarButtonItemExtensions.cs" />
+    <Compile Include="Extensions\UIButtonExtension.cs" />
+    <Compile Include="Extensions\UIButtonViewExtensions.cs" />
+    <Compile Include="Extensions\UIColorExtension.cs" />
+    <Compile Include="Extensions\UIDatePickerExtensions.cs" />
+    <Compile Include="Extensions\UIImageExtension.cs" />
+    <Compile Include="Extensions\UIImageViewExtension.cs" />
+    <Compile Include="Extensions\UILabelExtension.cs" />
+    <Compile Include="Extensions\UINavigationBarExtensions.cs" />
+    <Compile Include="Extensions\UINavigationControllerExtension.cs" />
+    <Compile Include="Extensions\UIPageViewControllerExtension.cs" />
+    <Compile Include="Extensions\UIRespondeExtensions.cs" />
+    <Compile Include="Extensions\UISearchBarExtensions.cs" />
+    <Compile Include="Extensions\UISplitViewControllerExtensions.cs" />
+    <Compile Include="Extensions\UITableViewExtension.cs" />
+    <Compile Include="Extensions\UITextExtension.cs" />
+    <Compile Include="Extensions\UITextFieldExtension.cs" />
+    <Compile Include="Extensions\UITextViewExtension.cs" />
+    <Compile Include="Extensions\UIViewControllerExtensions.cs" />
+    <Compile Include="Extensions\UIViewExtension.Animation.cs">
+      <DependentUpon>UIViewExtension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\UIViewExtension.Grandient.cs">
+      <DependentUpon>UIViewExtension.cs</DependentUpon>
+    </Compile>  
+    <Compile Include="Extensions\UIViewExtension.cs" />
+    <Compile Include="Location\CalculateCoordonate.cs" />
+    <Compile Include="MapKit\AnnotationView.cs" />
+    <Compile Include="MapKit\NibAnnotationView.cs" />
+    <Compile Include="Models\ImagePicker.cs" />
+    <Compile Include="UIKit\BTextView.cs" />
+    <Compile Include="UIKit\BUITableView.cs" />
+    <Compile Include="UIKit\ClickableView.cs" />
+    <Compile Include="UIKit\CollectionFlowDelegate.cs" />
+    <Compile Include="UIKit\CollectionViewCell.cs" />
+    <Compile Include="UIKit\CollectionViewSource.cs" />
+    <Compile Include="UIKit\DatepickerViewController.cs" />
+    <Compile Include="UIKit\DatepickerViewController.designer.cs">
+      <DependentUpon>DatepickerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIKit\EmptyTableView.cs" />
+    <Compile Include="UIKit\GradientView.cs" />
+    <Compile Include="UIKit\GridCollectionViewFlowLayout.cs" />
+    <Compile Include="UIKit\HyperLabel.cs" />
+    <Compile Include="UIKit\IClickableView.cs" />
+    <Compile Include="UIKit\INextResponder.cs" />
+    <Compile Include="UIKit\IPageItem.cs" />
+    <Compile Include="UIKit\IReusableView.cs" />
+    <Compile Include="UIKit\ITextView.cs" />
+    <Compile Include="UIKit\JVFloatLabeledTextField.cs" />
+    <Compile Include="UIKit\LabelTextViewWrapper.cs" />
+    <Compile Include="UIKit\LayoutObserver.cs" />
+    <Compile Include="UIKit\NextResponderTextField.cs" />
+    <Compile Include="UIKit\PaddingLabel.cs" />
+    <Compile Include="UIKit\PageDataSource.cs" />
+    <Compile Include="UIKit\PageViewController.cs" />
+    <Compile Include="UIKit\PageViewSource.cs" />
+    <Compile Include="UIKit\RatingView.cs" />
+    <Compile Include="UIKit\ReadMoreTextView.cs" />
+    <Compile Include="UIKit\ResizableView.cs" />
+    <Compile Include="UIKit\TableViewCell.cs" />
+    <Compile Include="UIKit\TextButton.cs" />
+    <Compile Include="UIKit\TextFieldTextViewWrapper.cs" />
+    <Compile Include="UIKit\TextViewWrapper.cs" />
+    <Compile Include="UIKit\TintedImageView.cs" />
+    <Compile Include="UIKit\UIButtonView.cs" />
+    <Compile Include="UIKit\UIImageButton.cs" />
+    <Compile Include="UIKit\UINibView.cs" />
+    <Compile Include="UIKit\UIViewButton.designer.cs" />
+    <Compile Include="UIKit\UIViewRemoveHelper.cs" />
+    <Compile Include="UIKit\VersionView.cs" />
+    <Compile Include="UIKit\ViewSource.cs" />
+    <Compile Include="UIKit\ViewSourceFactory.cs" />
+    <Compile Include="UIKit\ViewStateHelper.cs" />
+    <Compile Include="UIKit\Collections\IDataSource.cs" />
+    <Compile Include="UIKit\Collections\InternalDataSource.cs" />
+    <Compile Include="UIKit\DropdownView\BaseAdapter.cs" />
+    <Compile Include="UIKit\DropdownView\DropdownListView.cs" />
+    <Compile Include="UIKit\DropdownView\IAdapter.cs" />
+    <Compile Include="UIKit\DropdownView\IDropdownDelegate.cs" />
+    <Compile Include="UIKit\DropdownView\ItemSelectedEventArgs.cs" />
+    <Compile Include="UIKit\DropdownView\SimpleCellView.cs" />
+    <Compile Include="UIKit\DropdownView\SimpleCellView.designer.cs">
+      <DependentUpon>SimpleCellView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIKit\DropdownView\StringAdapter.cs" />
+    <Compile Include="UIKit\ModalPicker\CustomPickerModel.cs" />
+    <Compile Include="UIKit\ModalPicker\ModalPickerAnimatedDismissed.cs" />
+    <Compile Include="UIKit\ModalPicker\ModalPickerAnimatedTransitioning.cs" />
+    <Compile Include="UIKit\ModalPicker\ModalPickerTransitionDelegate.cs" />
+    <Compile Include="UIKit\ModalPicker\ModalPickerViewController.cs" />
+    <Compile Include="UIKit\Pager\ImageGalleryItemViewController.cs" />
+    <Compile Include="UIKit\Pager\ImageGalleryItemViewController.designer.cs">
+      <DependentUpon>ImageGalleryItemViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIKit\Pager\PageImageDataSource.cs" />
+    <Compile Include="UIKit\Pager\PageViewController.cs" />
+    <Compile Include="UIKit\Pager\PageViewController.designer.cs">
+      <DependentUpon>PageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIKit\Pager\PagerConfig.cs" />
+    <Compile Include="UIKit\Pager\PagerDataSource.cs" />
+    <Compile Include="UIKit\Pager\PagerViewController.cs" />
+    <Compile Include="UIKit\Pager\PagerViewController.designer.cs">
+      <DependentUpon>PagerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIKit\RadioViewHelper\IRadioView.cs" />
+    <Compile Include="UIKit\RadioViewHelper\RadioGroupWrapper.cs" />
+    <Compile Include="UIKit\RadioViewHelper\RadioViewWrapper.cs" />
+    <Compile Include="Utils\BIWeakReference.cs" />
+    <Compile Include="Utils\Camera.cs" />
+    <Compile Include="Utils\ConsoleLogger.cs" />
+    <Compile Include="Utils\DisposableContainer.cs" />
+    <Compile Include="Utils\FontManager.cs" />
+    <Compile Include="Utils\IImageLoader.cs" />
+    <Compile Include="Utils\ImageCacheManager.cs" />
+    <Compile Include="Utils\ImageLoader.cs" />
+    <Compile Include="Utils\LanguageConfiguration.cs" />
+    <Compile Include="Utils\LocationManager.cs" />
+    <Compile Include="Utils\PropertyChangedEventArgsCache.cs" />
+    <Compile Include="Utils\Social.cs" />
+    <Compile Include="Utils\StoryboardManager.cs" />
+    <Compile Include="Application.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\DatepickerViewController.xib" />
+    <InterfaceDefinition Include="Resources\EmptyTableView.xib" />
+    <InterfaceDefinition Include="Resources\ImageGalleryItemViewController.xib" />
+    <InterfaceDefinition Include="Resources\PagerViewController.xib" />
+    <InterfaceDefinition Include="Resources\SimpleCellView.xib" />
+    <InterfaceDefinition Include="Resources\VersionView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\RatingView.xcassets\Image.imageset\StarEmpty%402x.png" />
+    <ImageAsset Include="Resources\RatingView.xcassets\Image.imageset\StarFull%402x.png" />
+    <ImageAsset Include="Resources\RatingView.xcassets\StarFull.imageset\Contents.json" />
+    <ImageAsset Include="Resources\RatingView.xcassets\StartEmpty.imageset\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bss.Core\Bss.Core.csproj">
+      <Project>{6666AE40-2DB6-469E-B09E-DA5811B6F9DD}</Project>
+      <Name>Bss.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

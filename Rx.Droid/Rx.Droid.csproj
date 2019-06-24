@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E445790-1420-44B8-A51F-6969B575EAC0}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Rx.Droid</RootNamespace>
+    <AssemblyName>Rx.Droid</AssemblyName>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <JavaMaximumHeapSize></JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <JavaMaximumHeapSize></JavaMaximumHeapSize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Java.Interop" />
+    <Reference Include="ReactiveUI">
+      <HintPath>..\..\..\packages\ReactiveUI.8.7.2\lib\monoandroid80\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="ReactiveUI.AndroidSupport">
+      <HintPath>..\..\..\packages\ReactiveUI.AndroidSupport.8.7.2\lib\monoandroid80\ReactiveUI.AndroidSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Annotations">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Arch.Core.Common">
+      <HintPath>..\..\..\packages\Xamarin.Android.Arch.Core.Common.1.0.0.1\lib\MonoAndroid80\Xamarin.Android.Arch.Core.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Arch.Lifecycle.Common">
+      <HintPath>..\..\..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.0.3.1\lib\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Arch.Lifecycle.Runtime">
+      <HintPath>..\..\..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1\lib\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Compat">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.Compat.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.UI">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.Core.UI.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.Utils">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.Core.Utils.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Core.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Fragment">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.Fragment.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Fragment.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Media.Compat">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.Media.Compat.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Media.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Transition">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.Transition.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Transition.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.v4.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.v7.RecyclerView.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.Vector.Drawable.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.v7.AppCompat.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\..\..\packages\Xamarin.Android.Support.Design.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\..\..\packages\Splat.5.0.2\lib\monoandroid80\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive">
+      <HintPath>..\..\..\packages\System.Reactive.4.1.0\lib\netstandard2.0\System.Reactive.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App\RxActivity.cs" />
+    <Compile Include="App\RxAppCompatActivity.cs" />
+    <Compile Include="App\RxDialog.cs" />
+    <Compile Include="App\RxDroidCompat.cs" />
+    <Compile Include="App\RxFragment.cs" />
+    <Compile Include="App\RxFragmentActivity.cs" />
+    <Compile Include="App\RxSupportDialogFragment.cs" />
+    <Compile Include="App\RxSupportFragment.cs" />
+    <Compile Include="Extensions\ActivityExtensions.cs" />
+    <Compile Include="Extensions\AutoCompleteTextViewExtensions.cs" />
+    <Compile Include="Extensions\CompoundButtonExtensions.cs" />
+    <Compile Include="Extensions\EditTextExtensions.cs" />
+    <Compile Include="Extensions\I18NExtensions.cs" />
+    <Compile Include="Extensions\ListViewExtensions.cs" />
+    <Compile Include="Extensions\ObservableCollectionExtensions.cs" />
+    <Compile Include="Extensions\ObservableExtensions.cs" />
+    <Compile Include="Extensions\RVAdapterExtension.cs" />
+    <Compile Include="Extensions\RadioGroupExtensions.cs" />
+    <Compile Include="Extensions\ReactiveUIExtensions.cs" />
+    <Compile Include="Extensions\RecyclerViewExtensions.cs" />
+    <Compile Include="Extensions\SupportSearchViewExtensions.cs" />
+    <Compile Include="Extensions\SupportSearchViewExtensionsV7.cs" />
+    <Compile Include="Extensions\ViewExtensions.cs" />
+    <Compile Include="Extensions\ViewPagerExtensions.cs" />
+    <Compile Include="RxViews\RxFrameLayout.cs" />
+    <Compile Include="RxViews\RxLinearLayout.cs" />
+    <Compile Include="RxViews\RxReactivePagerAdapter.cs" />
+    <Compile Include="RxViews\RxRecyclerViewAdapter.cs" />
+    <Compile Include="RxViews\RxRelativeLayout.cs" />
+    <Compile Include="RxViews\RxToast.cs" />
+    <Compile Include="RxViews\RxView.cs" />
+    <Compile Include="RxViews\RxViewHolder.cs" />
+    <Compile Include="RxViews\RxViewHost.cs" />
+    <Compile Include="BackNavigationProvider.cs" />
+    <Compile Include="DeviceInternal.cs" />
+    <Compile Include="ICurrentActivityProvider.cs" />
+    <Compile Include="Registrations.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\values.xml" />
+    <AndroidResource Include="Resources\values-sw600dp\values.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rx.Core\Rx.Core.csproj">
+      <Project>{1E5181BC-CC6F-4944-B4FF-F30AD1A23787}</Project>
+      <Name>Rx.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bss.Droid\Bss.Droid.csproj">
+      <Project>{BB3FB6EF-B2B1-49BB-BFBC-3486145D353C}</Project>
+      <Name>Bss.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bss.Core\Bss.Core.csproj">
+      <Project>{8EBBAB3C-5B58-4781-8BFD-047CCE5DA521}</Project>
+      <Name>Bss.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Annotations.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Arch.Core.Common.1.0.0.1\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Arch.Core.Common.1.0.0.1\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Runtime.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Runtime.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.Compat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.Compat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Compat.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.Core.UI.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Core.UI.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.Core.UI.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Core.UI.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.Core.Utils.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Core.Utils.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.Core.Utils.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Core.Utils.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.Fragment.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Fragment.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.Fragment.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Fragment.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.Media.Compat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Media.Compat.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.Media.Compat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Media.Compat.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.Transition.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Transition.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.Transition.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Transition.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.v4.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v4.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.v4.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v4.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.v7.RecyclerView.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v7.RecyclerView.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.v7.RecyclerView.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v7.RecyclerView.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.Vector.Drawable.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.Vector.Drawable.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Animated.Vector.Drawable.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Animated.Vector.Drawable.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.v7.AppCompat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v7.AppCompat.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.v7.AppCompat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v7.AppCompat.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Android.Support.Design.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Design.targets" Condition="Exists('..\..\..\packages\Xamarin.Android.Support.Design.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Design.targets')" />
+</Project>

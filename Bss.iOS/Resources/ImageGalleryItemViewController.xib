@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageGalleryItemViewController">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TWc-FR-HdY"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TWc-FR-HdY" secondAttribute="trailing" id="6Va-TG-cEY"/>
+                <constraint firstItem="TWc-FR-HdY" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="MJe-rv-oQ9"/>
+                <constraint firstItem="TWc-FR-HdY" firstAttribute="top" secondItem="2" secondAttribute="top" id="Wur-6J-ua1"/>
+                <constraint firstAttribute="bottom" secondItem="TWc-FR-HdY" secondAttribute="bottom" id="vfX-Th-TMr"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

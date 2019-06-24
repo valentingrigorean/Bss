@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4g4-0T-23O">
+                    <rect key="frame" x="284" y="619.5" width="91" height="47.5"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Y0f-mq-pkU">
+                        <rect key="frame" x="0.0" y="0.0" width="91" height="47.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm7-tx-316">
+                                <rect key="frame" x="8" y="8" width="75" height="31.5"/>
+                                <string key="text">Version:1.0.1
+Build:1.0.1</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dm7-tx-316" secondAttribute="bottom" constant="8" id="Hb6-Qh-79D"/>
+                            <constraint firstItem="dm7-tx-316" firstAttribute="leading" secondItem="Y0f-mq-pkU" secondAttribute="leading" constant="8" id="X30-Dw-ftw"/>
+                            <constraint firstAttribute="trailing" secondItem="dm7-tx-316" secondAttribute="trailing" constant="8" id="Zxf-QU-yMi"/>
+                            <constraint firstItem="dm7-tx-316" firstAttribute="top" secondItem="Y0f-mq-pkU" secondAttribute="top" constant="8" id="z3a-Yt-yfP"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="dark"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4g4-0T-23O" secondAttribute="bottom" id="AX0-Py-8dJ"/>
+                <constraint firstAttribute="trailing" secondItem="4g4-0T-23O" secondAttribute="trailing" id="vwe-J5-71l"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
